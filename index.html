@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Management</title>
+</head>
+<body>
+    <div>
+        <h1>Farm Management</h1>
+        <!-- Search bar -->
+        <input type="text" id="search-input" placeholder="Search by location">
+        <button onclick="searchFarm()">Search</button>
+        
+        <!-- Sorting options -->
+        <button onclick="sortFarmsByAnimals()">Sort by Number of Animals</button>
+        <button onclick="sortFarmsByPower()">Sort by Fan Power</button>
+
+        <!-- Data display -->
+        <div id="farm-container"></div>
+
+        <!-- Total fan power -->
+        <h2>Total Fan Power: <span id="total-power"></span> Watts</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
